@@ -10,6 +10,8 @@ public class TestSpring {
 
         MusicPlayer player = classPath.getBean("musicPlayer", MusicPlayer.class);
         player.playMusic();
+        System.out.println("Getting from resources: ");
+        System.out.println(player.getName() + " | " + player.getVolume());
 
         classPath.close();
     }
